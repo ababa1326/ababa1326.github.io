@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Small Free Tools — Nothing to Install, Nothing Leaves Your Browser</title>
+<meta name="description" content="A small collection of free, single-purpose tools: credit-card timing calculators and reminders. No accounts, no tracking, all client-side." />
+<link rel="canonical" href="https://ababa1326.github.io/" />
+<meta name="theme-color" content="#14110f" />
+<style>
+  :root {
+    --ink: #14110f;
+    --paper: #faf7f2;
+    --line: #e6ddd0;
+    --muted: #8a7f72;
+    --shadow: 0 1px 0 rgba(20,17,15,0.04), 0 12px 40px -20px rgba(20,17,15,0.25);
+    --mono: "SF Mono", "Roboto Mono", ui-monospace, "Cascadia Code", Menlo, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px; }
+  header.top { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .brand b { color: var(--ink); font-weight: 600; }
+  .brand .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  main { padding-bottom: 72px; }
+  .hero { padding: 52px 0 32px; }
+  h1 {
+    max-width: 14ch;
+    margin-bottom: 18px;
+    font-size: clamp(30px, 6vw, 46px);
+    font-weight: 680;
+    letter-spacing: -0.02em;
+    line-height: 1.04;
+  }
+  h1 .quiet { color: var(--muted); }
+  .lede { max-width: 55ch; color: #4a443c; font-size: 18px; }
+  .tools { display: grid; gap: 14px; }
+  .tool {
+    --accent: var(--ink);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px 24px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+  }
+  .tool-copy { min-width: 0; }
+  .eyebrow {
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .pitch {
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 660;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+  .detail { max-width: 55ch; color: #4a443c; font-size: 14px; }
+  .open {
+    align-self: center;
+    padding: 9px 13px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 9px;
+    font-family: var(--mono);
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .open:hover, .open:focus-visible { background: var(--accent); color: #fff; }
+  .open:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 25%, transparent); outline-offset: 2px; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 26px 0 40px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer p { margin-bottom: 8px; }
+  footer a { color: var(--ink); text-underline-offset: 3px; }
+  footer .disc { font-size: 12px; line-height: 1.6; }
+  @media (max-width: 560px) {
+    .hero { padding: 40px 0 26px; }
+    .tool { grid-template-columns: 1fr; padding: 20px; }
+    .open { justify-self: start; }
+  }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand"><span class="dot" aria-hidden="true"></span> Small<b>Tools</b></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Single-purpose tools. <span class="quiet">Free, instant, private.</span></h1>
+      <p class="lede">Each of these does one job, entirely in your browser. No accounts, no tracking, nothing leaves the page.</p>
+    </section>
+
+    <section class="tools" aria-label="Available tools">
+      <article class="tool" style="--accent:#1f6b4f">
+        <div class="tool-copy">
+          <p class="eyebrow">ReportsLow</p>
+          <h2 class="pitch">Know what your credit card actually reports.</h2>
+          <p class="detail">Your balance is reported on the statement closing date — not the due date. See exactly how much to pay before the snapshot.</p>
+        </div>
+        <a class="open" href="https://ababa1326.github.io/reportslow/">Open →</a>
+      </article>
+
+      <article class="tool" style="--accent:#4a3b8a">
+        <div class="tool-copy">
+          <p class="eyebrow">ZeroEnds</p>
+          <h2 class="pitch">Beat your 0% intro APR deadline.</h2>
+          <p class="detail">The balance left when the promo ends is what gets expensive. Get your required monthly payment and a 30-day warning reminder.</p>
+        </div>
+        <a class="open" href="https://ababa1326.github.io/zeroends/">Open →</a>
+      </article>
+
+      <article class="tool" style="--accent:#c4622d">
+        <div class="tool-copy">
+          <p class="eyebrow">Statement Reminder</p>
+          <h2 class="pitch">A badge countdown to your closing dates.</h2>
+          <p class="detail">Chrome extension — Web Store review pending. Until then, load it from source.</p>
+        </div>
+        <a class="open" href="https://github.com/ababa1326/statement-reminder">View source →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p style="font-weight:600;color:var(--ink);">Free tools, built in the open — <a href="https://github.com/ababa1326">source on GitHub</a>.</p>
+      <p class="disc">These are educational tools, not financial advice. They estimate based on the information you enter and do not connect to your bank or credit report. Confirm important dates and amounts with your card issuer.</p>
+    </div>
+  </footer>
+</body>
+</html>
